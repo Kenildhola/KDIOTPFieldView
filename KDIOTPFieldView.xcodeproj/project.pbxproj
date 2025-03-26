@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		884F552F2D93E09600842A14 /* KDIOTPFieldView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884F55242D93E09500842A14 /* KDIOTPFieldView.framework */; };
+		884F55422D93E09D00842A14 /* KDIOTPFieldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 884F553F2D93E09D00842A14 /* KDIOTPFieldView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		884F55432D93E09D00842A14 /* KDIOTPFieldView.docc in Sources */ = {isa = PBXBuildFile; fileRef = 884F55402D93E09D00842A14 /* KDIOTPFieldView.docc */; };
+		884F55462D93E09F00842A14 /* KDIOTPFieldViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F55442D93E09F00842A14 /* KDIOTPFieldViewTests.swift */; };
+		884F55482D93E0C200842A14 /* KDIOTPFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F55472D93E0C200842A14 /* KDIOTPFieldView.swift */; };
+		884F554A2D93E0CD00842A14 /* KDIOTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F55492D93E0CD00842A14 /* KDIOTPTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		884F55302D93E09600842A14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 884F551B2D93E09500842A14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 884F55232D93E09500842A14;
+			remoteInfo = KDIOTPFieldView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		884F55242D93E09500842A14 /* KDIOTPFieldView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KDIOTPFieldView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		884F552E2D93E09600842A14 /* KDIOTPFieldViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDIOTPFieldViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		884F553F2D93E09D00842A14 /* KDIOTPFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDIOTPFieldView.h; sourceTree = "<group>"; };
+		884F55402D93E09D00842A14 /* KDIOTPFieldView.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = KDIOTPFieldView.docc; sourceTree = "<group>"; };
+		884F55442D93E09F00842A14 /* KDIOTPFieldViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDIOTPFieldViewTests.swift; sourceTree = "<group>"; };
+		884F55472D93E0C200842A14 /* KDIOTPFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDIOTPFieldView.swift; sourceTree = "<group>"; };
+		884F55492D93E0CD00842A14 /* KDIOTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDIOTPTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		884F55212D93E09500842A14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		884F552B2D93E09600842A14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884F552F2D93E09600842A14 /* KDIOTPFieldView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		884F551A2D93E09500842A14 = {
+			isa = PBXGroup;
+			children = (
+				884F55412D93E09D00842A14 /* KDIOTPFieldView */,
+				884F55452D93E09F00842A14 /* KDIOTPFieldViewTests */,
+				884F55252D93E09500842A14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		884F55252D93E09500842A14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				884F55242D93E09500842A14 /* KDIOTPFieldView.framework */,
+				884F552E2D93E09600842A14 /* KDIOTPFieldViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		884F55412D93E09D00842A14 /* KDIOTPFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				884F553F2D93E09D00842A14 /* KDIOTPFieldView.h */,
+				884F55472D93E0C200842A14 /* KDIOTPFieldView.swift */,
+				884F55492D93E0CD00842A14 /* KDIOTPTextField.swift */,
+				884F55402D93E09D00842A14 /* KDIOTPFieldView.docc */,
+			);
+			path = KDIOTPFieldView;
+			sourceTree = "<group>";
+		};
+		884F55452D93E09F00842A14 /* KDIOTPFieldViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				884F55442D93E09F00842A14 /* KDIOTPFieldViewTests.swift */,
+			);
+			path = KDIOTPFieldViewTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		884F551F2D93E09500842A14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884F55422D93E09D00842A14 /* KDIOTPFieldView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		884F55232D93E09500842A14 /* KDIOTPFieldView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 884F55372D93E09600842A14 /* Build configuration list for PBXNativeTarget "KDIOTPFieldView" */;
+			buildPhases = (
+				884F551F2D93E09500842A14 /* Headers */,
+				884F55202D93E09500842A14 /* Sources */,
+				884F55212D93E09500842A14 /* Frameworks */,
+				884F55222D93E09500842A14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KDIOTPFieldView;
+			packageProductDependencies = (
+			);
+			productName = KDIOTPFieldView;
+			productReference = 884F55242D93E09500842A14 /* KDIOTPFieldView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		884F552D2D93E09600842A14 /* KDIOTPFieldViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 884F553C2D93E09600842A14 /* Build configuration list for PBXNativeTarget "KDIOTPFieldViewTests" */;
+			buildPhases = (
+				884F552A2D93E09600842A14 /* Sources */,
+				884F552B2D93E09600842A14 /* Frameworks */,
+				884F552C2D93E09600842A14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				884F55312D93E09600842A14 /* PBXTargetDependency */,
+			);
+			name = KDIOTPFieldViewTests;
+			packageProductDependencies = (
+			);
+			productName = KDIOTPFieldViewTests;
+			productReference = 884F552E2D93E09600842A14 /* KDIOTPFieldViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		884F551B2D93E09500842A14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					884F55232D93E09500842A14 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					884F552D2D93E09600842A14 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 884F551E2D93E09500842A14 /* Build configuration list for PBXProject "KDIOTPFieldView" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 884F551A2D93E09500842A14;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 884F55252D93E09500842A14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				884F55232D93E09500842A14 /* KDIOTPFieldView */,
+				884F552D2D93E09600842A14 /* KDIOTPFieldViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		884F55222D93E09500842A14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		884F552C2D93E09600842A14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		884F55202D93E09500842A14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884F55482D93E0C200842A14 /* KDIOTPFieldView.swift in Sources */,
+				884F55432D93E09D00842A14 /* KDIOTPFieldView.docc in Sources */,
+				884F554A2D93E0CD00842A14 /* KDIOTPTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		884F552A2D93E09600842A14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884F55462D93E09F00842A14 /* KDIOTPFieldViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		884F55312D93E09600842A14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 884F55232D93E09500842A14 /* KDIOTPFieldView */;
+			targetProxy = 884F55302D93E09600842A14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		884F55382D93E09600842A14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KDIOTPFieldView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		884F55392D93E09600842A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KDIOTPFieldView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		884F553A2D93E09600842A14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		884F553B2D93E09600842A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		884F553D2D93E09600842A14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KDIOTPFieldViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		884F553E2D93E09600842A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KDIOTPFieldViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		884F551E2D93E09500842A14 /* Build configuration list for PBXProject "KDIOTPFieldView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				884F553A2D93E09600842A14 /* Debug */,
+				884F553B2D93E09600842A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		884F55372D93E09600842A14 /* Build configuration list for PBXNativeTarget "KDIOTPFieldView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				884F55382D93E09600842A14 /* Debug */,
+				884F55392D93E09600842A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		884F553C2D93E09600842A14 /* Build configuration list for PBXNativeTarget "KDIOTPFieldViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				884F553D2D93E09600842A14 /* Debug */,
+				884F553E2D93E09600842A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 884F551B2D93E09500842A14 /* Project object */;
+}
