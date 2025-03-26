@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc public protocol NDOTPFieldViewDelegate: class {
+@objc public protocol NDOTPFieldViewDelegate: AnyObject {
     
     func canBecomeFirstResponderForOTP(otpTextFieldIndex index: Int) -> Bool
     func didEnterOTP(otp: String)
