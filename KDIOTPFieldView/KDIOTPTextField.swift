@@ -1,9 +1,11 @@
 //
-//  KDIOTPTextField.swift
-//  KDIOTPFieldView
+//  OTPTextField.swift
+//  OTPFieldView
 //
-//  Created by iMac on 26/03/25.
+//  Created by Vaibhav Bhasin on 10/09/19.
+//  Copyright © 2019 Vaibhav Bhasin. All rights reserved.
 //
+
 
 import UIKit
 
@@ -11,15 +13,8 @@ import UIKit
     /// Border color for the OTP field
     public var otpBorderColor: UIColor = UIColor.black
     
-    /// Border width for the OTP field
+    /// Border width info for field
     public var otpBorderWidth: CGFloat = 2
-
-    /// Text color for the OTP field
-    public var otpTextColor: UIColor = UIColor.black {
-        didSet {
-            textColor = otpTextColor
-        }
-    }
     
     public var shapeLayer: CAShapeLayer!
     
@@ -29,52 +24,51 @@ import UIKit
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupTextField()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setupTextField()
     }
     
-    /// Sets up default properties for the text field
-    private func setupTextField() {
-        textColor = otpTextColor
+    public func initalizeUI(forFieldType type: OTPFieldStyle) {
+        switch type {
+        case .roundShape:
+            layer.cornerRadius = bounds.size.width / 2
+            break
+        case .roundedCorner:
+            layer.cornerRadius = 4
+            break
+        case .rectangle:
+            layer.cornerRadius = 0
+            break
+        case .diamond:
+            addDiamondMask()
+            break
+        case .underlined:
+            addBottomView()
+            break
+        }
+        
+        // Basic UI setup
+        if type != .diamond && type != .underlined {
+            layer.borderColor = otpBorderColor.cgColor
+            layer.borderWidth = otpBorderWidth
+        }
+        
         autocorrectionType = .no
         textAlignment = .center
         if #available(iOS 12.0, *) {
             textContentType = .oneTimeCode
         }
     }
-
-    /// Initializes the UI for different OTP field styles
-    public func initializeUI(forFieldType type: OTPFieldStyle) {
-        switch type {
-        case .roundShape:
-            layer.cornerRadius = bounds.size.width / 2
-        case .roundedCorner:
-            layer.cornerRadius = 4
-        case .rectangle:
-            layer.cornerRadius = 0
-        case .diamond:
-            addDiamondMask()
-        case .underlined:
-            addBottomView()
-        }
-
-        // Apply border color and width for applicable styles
-        if type != .diamond && type != .underlined {
-            layer.borderColor = otpBorderColor.cgColor
-            layer.borderWidth = otpBorderWidth
-        }
-    }
     
     override func deleteBackward() {
         super.deleteBackward()
+        
         _ = delegate?.textField?(self, shouldChangeCharactersIn: NSMakeRange(0, 0), replacementString: "")
     }
     
-    /// Creates a diamond-shaped view
+    // Helper function to create diamond view
     fileprivate func addDiamondMask() {
         let path = UIBezierPath()
         path.move(to: CGPoint(x: bounds.size.width / 2.0, y: 0))
@@ -85,6 +79,7 @@ import UIKit
         
         let maskLayer = CAShapeLayer()
         maskLayer.path = path.cgPath
+        
         layer.mask = maskLayer
         
         shapeLayer = CAShapeLayer()
@@ -96,7 +91,7 @@ import UIKit
         layer.addSublayer(shapeLayer)
     }
     
-    /// Creates an underlined text field style
+    // Helper function to create a underlined bottom view
     fileprivate func addBottomView() {
         let path = UIBezierPath()
         path.move(to: CGPoint(x: 0, y: bounds.size.height))

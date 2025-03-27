@@ -127,12 +127,9 @@ import UIKit
         else {
             otpField.tintColor = UIColor.clear
         }
-        
-        // Set the default background color when text not set
+        otpField.textColor = otpTextColor
         otpField.backgroundColor = backgroundColorDefault
-        otpField.otpTextColor = otpTextColor
-        // Finally create the fields
-        otpField.initializeUI(forFieldType: otpFieldStyle)
+        otpField.initalizeUI(forFieldType: otpFieldStyle)
         
         return otpField
     }
