@@ -5,7 +5,7 @@
 //  Created by iMac on 26/03/25.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 //! Project version number for KDIOTPFieldView.
 FOUNDATION_EXPORT double KDIOTPFieldViewVersionNumber;
